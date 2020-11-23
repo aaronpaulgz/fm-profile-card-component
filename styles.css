@@ -10,8 +10,8 @@
 }
 
 html {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
+  /* overflow-y: hidden; */
   background-color: var(--dark-cyan);
   width: 100%;
   height: 100%;
@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
+  /* overflow-y: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,23 +64,25 @@ body {
   height: 8rem;
 }
 
-.card > .card-bg > .card-imgcontainer {
+.card-imgcontainer {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.card > .card-bg > .card-imgcontainer > .card-img {
+.card-imgcontainer > .card-img {
   border-radius: 50%;
   border: solid white 0.4rem;
-  margin-top: 5rem;
+  margin-top: -3rem;
 }
 
 /* Card Identifier */
 .card-identifier {
   /* border: solid red 1px; */
-  height: 5rem;
-  padding-top: 6rem;
+  height: 11rem;
+  /* padding-top: 6rem; */
+  display: flex;
+  flex-direction: column;
 }
 
 .card-identifier_personal {
@@ -92,8 +94,9 @@ body {
   font-size: 1.2rem;
   margin: 0;
   margin-right: 0.6rem;
+  margin-top: 1.5rem;
 }
-.card-identifier h2 {
+.card-identifier span {
   font-size: 1.2rem;
   margin: 0;
   color: var(--dark-gray);
